@@ -1,13 +1,13 @@
 
 # 1) Data Cleaning Process
 
-# AIM
+# AIM :
 To read the given data and perform data cleaning and save the cleaned data to a file.
 
-# Explanation
+# Explanation :
 Data cleaning is the process of preparing data for analysis by removing or modifying data that is incorrect ,incompleted , irrelevant , duplicated or improperly formatted. Data cleaning is not simply about erasing data ,but rather finding a way to maximize datasets accuracy without necessarily deleting the information.
 
-# Algorithm
+# Algorithm :
 STEP 1: Read the given Data
 
 STEP 2: Get the information about the data
@@ -20,7 +20,7 @@ STEP 5: Remove outliers using IQR
 
 STEP 6: Use zscore of to remove outliers
 
-# Coding and Output
+# Coding and Output :
 ```python
 #progarm done by : R.SUDHIR KUMAR
 #register number : 212223230221
@@ -63,5 +63,27 @@ df.dropna(axis=1)
 df.describe()
 ```
 ![pic](desc.png)
-# Result
+
+
+# 2) Outlier Detection and Removal
+
+# AIM:
+To read a given dataset and remove outliers and save a new dataframe.
+
+# ALGORITHM:
+(1) Remove outliers using IQR
+
+(2) After removing outliers in step 1, you get a new dataframe.
+
+(3) use zscore of 3 to remove outliers. This is quite similar to IQR and you will get exact same result
+
+(4) for the data set height_weight.csv find the following
+
+    (a) Using IQR detect weight outliers and print them
+
+    (b) Using ZScore, detect height outliers and print them
+
+# Coding and Output :
+
+# Result :
 Thus, the given data is read, cleansed and the cleaned data is saved into the file and the given data is read,remove outliers and save a new dataframe was created and executed successfully.
