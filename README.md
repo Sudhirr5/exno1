@@ -1,5 +1,5 @@
-# Exno:1
-Data Cleaning Process
+
+# 1) Data Cleaning Process
 
 # AIM
 To read the given data and perform data cleaning and save the cleaned data to a file.
@@ -48,4 +48,20 @@ print(df.isnull())
 print(df.fillna(0))
 ```
 ![pic](fnull.png)
+```python
+#total no. of null in each columns
+df.isnull().sum()
+```
+![pic](nullsum.png)
+```python
+# drop axis
+df.dropna(axis=1)
+```
+![pic](dropax.png)
+```python
+#describe
+df.describe()
+```
+![pic](desc.png)
 # Result
+Thus, the given data is read, cleansed and the cleaned data is saved into the file and the given data is read,remove outliers and save a new dataframe was created and executed successfully.
