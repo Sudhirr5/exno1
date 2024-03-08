@@ -85,5 +85,74 @@ To read a given dataset and remove outliers and save a new dataframe.
 
 # Coding and Output :
 
+```PYTHON
+# Program done by : R.SUDHIR KUMAR
+# Register number : 212223230221
+```
+# IQR
+```python
+import pandas as pd
+import seaborn as sns
+age=[1,3,28,27,25,92,30,39,40,50,26,24,29,94]
+af=pd.DataFrame(age)
+af
+```
+![pic](scr1.png)
+```python
+sns.boxplot(data=af)
+```
+![pic](scr2.png)
+```python
+sns.scatterplot(data=af)
+```
+![pic](scr3.png)
+```python
+low=q1-1.5*iqr
+low
+high=q3+1.5*iqr
+high
+```
+![pic](scr4.png)
+```python
+aq=af[((af>=low)&(af<=high))]
+aq.dropna()
+```
+![pic](scr5.png)
+```python
+sns.boxplot(data=aq)
+sns.scatterplot(data=aq)
+```
+![pic](scr6.png)
+
+# ZSCORE
+```python
+data = {'weight':[12,15,18,21,24,27,30,33,36,39,42,45,48,51,54,57,60,63,66,69,202,72,75,78,81,84,232,87,90,93,96,99,258]}
+df=pd.DataFrame(data)
+df
+```
+![pic](scr11.png)
+```python
+sns.boxplot(data=df)
+```
+![pic](scr12.png)
+```python
+z = np.abs(stats.zscore(df))
+print(df[z['weight']>3])
+```
+![pic](scr13.png)
+```python
+def d_o(val):
+    ts=3
+    m=np.mean(val)
+    sd=np.std(val)
+    for i in val:
+        z=(i-m)/sd
+        if np.abs(z)>ts:
+            out.append(i)
+        return out
+op = d_o(val)
+op
+```
+![pic](scr14.png)
 # Result :
 Thus, the given data is read, cleansed and the cleaned data is saved into the file and the given data is read,remove outliers and save a new dataframe was created and executed successfully.
