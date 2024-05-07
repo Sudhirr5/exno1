@@ -21,9 +21,9 @@ STEP 5: Remove outliers using IQR
 STEP 6: Use zscore of to remove outliers
 
 # Coding and Output :
-```python
-#progarm done by : R.SUDHIR KUMAR
-#register number : 212223230221
+```
+Developed by : R.SUDHIR KUMAR
+Register number : 212223230221
 ```
 ```python
 #reading csv file
@@ -85,9 +85,9 @@ To read a given dataset and remove outliers and save a new dataframe.
 
 # Coding and Output :
 
-```PYTHON
-# Program done by : R.SUDHIR KUMAR
-# Register number : 212223230221
+```
+Developed by : R.SUDHIR KUMAR
+Register number : 212223230221
 ```
 # IQR
 ```python
